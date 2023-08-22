@@ -55,24 +55,5 @@ def remove_emp(id):
     with conn:
         c.execute("DELETE from employees WHERE id = :id", {'id': id})
 
-# emp_1 = Employee('John', 'Doe', 80000)
-# emp_2 = Employee('Jane', 'Doe', 90000)
-# emp_3 = Employee()
-# emp_3.first = 'Manuel'
-# emp_3.last = 'Gräfe'
-# emp_3.pay = 4500
-
-# insert_emp(emp_1)
-# insert_emp(emp_2)
-# insert_emp(emp_3)
-
-# emps = get_emps_by_name('Schafer')
-# print(emps)
-
-# update_pay(emp_2, 95000)
-# remove_emp(emp_1)
-
-# emps = get_emps_by_name('Doe')
-# print(emps)
 
 conn.close()

@@ -150,7 +150,6 @@ def display_all_entrys():
             
             # Create labels to display the selected data
             change_label1 = ttk.Label(change_data_window, text='ID:', anchor="center")
-            # change_label1 = ttk.Label(change_data_window, text='ID:')
             change_label1.configure(style="Label")
             change_label1_value = ttk.Label(change_data_window, text= record[0], anchor="center")
             change_label1_value.configure(style="Label")
